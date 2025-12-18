@@ -109,6 +109,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      navigation: main
 
 category_archive:
   type: liquid
