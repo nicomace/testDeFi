@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: DeFi risk & portfolio analytics
+title: NicoMace Portfolio
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -59,9 +59,12 @@ plugins:
 
 author:
   name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  avatar : "/assets/images/IMG-20250527-WA0005-2.jpg"
+  bio    : "From TradFi to DeFi, want to dive more into the next financial revolution."
   links:
+    - label: "Linkedin"
+      icon: "fa-brands fa-linkedin"
+      url: "https://www.linkedin.com/in/macenicolas/"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://"
@@ -71,9 +74,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    #- label: "Instagram"
+     # icon: "fab fa-fw fa-instagram"
+      #url: "https://instagram.com/"
 
 footer:
   links:
