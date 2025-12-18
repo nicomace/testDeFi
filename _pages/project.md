@@ -45,41 +45,26 @@ This toolkit is designed to answer, at a glance:
 
 ## Modules
 
-### 1) Risk Overview
-- Lending/borrowing health: LTV monitoring, liquidation distance, collateral concentration
-- CLMM risk: out-of-range probability cues, inventory drift, exposure by token
-- Portfolio exposure: token, protocol, chain, stablecoin issuer, bridge/oracle dependencies
-
-**Go deeper →** [Risk Overview](/testDeFi/project/category-1/)
-
-### 2) Performance Overview
-- Net performance over time: **fees – IL – funding – borrow cost**
-- Per-position scorecards: realized vs unrealized, volatility regimes, fee consistency
-- Strategy lens: range width, rebalancing frequency, fee-to-risk efficiency
-
-**Go deeper →** [Performance Overview](/testDeFi/project/performance/)
-
-### 3) Position Monitoring (CLMM / LP / MM)
+### 1) Position Monitoring (CLMM / LP / MM)
 - Live state: in-range/out-of-range, range distance, inventory composition
 - Operational workflow: rebalance triggers, harvest cadence, deployment sizing
 - “MM mindset”: inventory risk, price range risk, fee volatility
 
 **Go deeper →** [Position Monitoring](/testDeFi/project/positions/)
 
----
+### 2) Risk Overview
+- Lending/borrowing health: LTV monitoring, liquidation distance, collateral concentration
+- CLMM risk: out-of-range probability cues, inventory drift, exposure by token
+- Portfolio exposure: token, protocol, chain, stablecoin issuer, bridge/oracle dependencies
 
-## Screenshots (placeholders)
+**Go deeper →** [Risk Overview](/testDeFi/project/category-1/)
 
-> Replace images when you’re ready — the layout stays clean even with placeholders.
+### 3) Performance Overview
+- Net performance over time: **fees – IL – funding – borrow cost**
+- Per-position scorecards: realized vs unrealized, volatility regimes, fee consistency
+- Strategy lens: range width, rebalancing frequency, fee-to-risk efficiency
 
-### Risk dashboard
-![Risk Dashboard](/assets/images/toolkit/risk_dashboard.png){: .align-center }
-
-### Performance dashboard
-![Performance Dashboard](/assets/images/toolkit/perf_dashboard.png){: .align-center }
-
-### Positions monitoring
-![Positions Monitoring](/assets/images/toolkit/positions_monitoring.png){: .align-center }
+**Go deeper →** [Performance Overview](/testDeFi/project/performance/)
 
 ---
 
