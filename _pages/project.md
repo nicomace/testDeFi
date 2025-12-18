@@ -45,7 +45,7 @@ This toolkit is designed to answer, at a glance:
 
 ## Modules
 
-### - Position Monitoring (CLMM / LP / MM)
+### -- Position Monitoring (CLMM / LP / MM)
 - Live state: in-range/out-of-range, range distance, inventory composition
 - Operational workflow: rebalance triggers, harvest cadence, deployment sizing
 - “MM mindset”: inventory risk, price range risk, fee volatility
