@@ -1,7 +1,7 @@
 ---
 title: "Project"
-sitemap: false
-permalink: /project
+#sitemap: false
+permalink: /project/
 ---
 
 **In build**
