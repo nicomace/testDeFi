@@ -1,6 +1,5 @@
 ---
-title: "Project"
-#sitemap: false
+title: "DeFi Risk Monitoring Toolkit"
 permalink: /project/
 ---
 
