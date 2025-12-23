@@ -2,6 +2,10 @@
 title: "Positions"
 permalink: /project/positions/
 layout: single
+classes: wide
+author: false
+author_profile: false
+sidebar: false
 ---
 
 💧 Active DeFi Position Monitoring (CLMM & LP)
