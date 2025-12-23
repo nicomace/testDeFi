@@ -62,7 +62,7 @@ plugins:
 author:
   name   : "Nicolas Macé"
   avatar : "/assets/images/IMG-20250527-WA0005-2.jpg"
-  bio    : "From TradFi to DeFi, want to dive more into the next financial revolution."
+  bio    : "Applying institutional risk management principles to DeFi portfolios and CLMM market making."
   links:
     - label: "Linkedin"
       icon: "fa-brands fa-linkedin"
