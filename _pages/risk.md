@@ -2,6 +2,10 @@
 title: "Risk Overview"
 permalink: /project/risk/
 layout: single
+classes: wide
+author: false
+author_profile: false
+sidebar: false
 ---
 
 <style>
