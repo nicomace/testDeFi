@@ -25,6 +25,7 @@ toc: false
   }
 </style>
 
+This CV summarizes my background across **TradFi market infrastructure** and **DeFi risk & analytics**.
 
 ## Curriculum Vitae
 
