@@ -8,6 +8,24 @@ author_profile: false
 sidebar: false
 ---
 
+<style>
+  /* Supprime les marges et force la largeur maximale sur le conteneur principal */
+  .layout--single .archive, 
+  .layout--single .page__content, 
+  .layout--single .page__inner-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-right: 0 !important;
+  }
+
+  /* Si vous voulez aussi réduire l'espace blanc en haut */
+  .page {
+    width: 100% !important;
+    padding-right: 0 !important;
+  }
+</style>
+
+
 💧 Active DeFi Position Monitoring (CLMM & LP)
 
 - Tracking of active liquidity positions across Concentrated Liquidity Market Makers (CLMMs)
