@@ -21,6 +21,15 @@ excerpt: "A practical toolkit to monitor DeFi risk exposure, CLMM positions, and
   {{ disclaimer | markdownify }}
 </div>
 
+## Overview
+
+The DeFi Risk Monitoring Toolkit is a personal, research-driven framework designed to monitor, analyze, and manage risk across decentralized finance strategies, with a strong focus on capital efficiency, liquidity provision, and market making mechanics.
+Built from real-world DeFi usage, this toolkit aims to bridge the gap between on-chain execution and institutional-style risk monitoring, inspired by practices found in traditional trading, treasury, and market making desks.
+The objective is simple:
+👉 turn fragmented DeFi positions into a coherent, risk-aware portfolio view.
+
+---
+
 ## Why this toolkit exists
 
 Most DeFi dashboards show *positions*. Few show **risk**.
@@ -38,8 +47,7 @@ This toolkit is designed to answer, at a glance:
 
 ## What it covers
 
-{% assign feature_row = site.data.feature_rows.defi_toolkit %}
-{% include feature_row id="defi_toolkit" type="center" %}
+*IN BUILD*
 
 ---
 
@@ -89,7 +97,6 @@ This toolkit is designed to answer, at a glance:
 
 ## Architecture (simple, reliable, extendable)
 
-- **Data sources**: on-chain APIs / subgraphs / protocol endpoints (depending on module)
 - **Storage**: Google Sheets (fast iteration) + optional exports
 - **Logic**: formulas + scripts (Apps Script / Python optional)
 - **Outputs**: dashboards, alerts, and weekly reports
