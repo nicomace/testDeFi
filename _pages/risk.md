@@ -1,6 +1,6 @@
 ---
 title: "Risk Overview"
-permalink: /project/riskoverview/
+permalink: /project/risk/
 layout: single
 ---
 
