@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Welcome"
+classes: wide
 author_profile: true
 ---
 
