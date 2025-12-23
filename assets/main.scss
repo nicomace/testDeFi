@@ -4,3 +4,27 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
+
+
+/* ===== About / CV page ===== */
+
+.about-page .cv-actions {
+  margin: 1.5rem 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.about-page .cv-container {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.about-page .cv-container iframe {
+  width: 100%;
+  height: 1100px;
+  border: none;
+}
