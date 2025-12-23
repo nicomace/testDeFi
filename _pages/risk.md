@@ -16,3 +16,5 @@ o	Impermanent loss risk
 o	Volatility and range risk
 o	Protocol dependency risk
 
+The toolkit aims to answer one question clearly:
+“Where can this portfolio break under stress?”
