@@ -48,11 +48,11 @@ Particularly suited for range-based liquidity provision, delta-sensitive LP, and
   <figcaption><em>Create positions interface</em></figcaption>
 </figure>
 
-<figure style="text-align: center;">
+<figure style="max-width: 820px; margin: 2rem auto; text-align: center;">
   <img
     src="/testDeFi/assets/images/positions/histo_positions1.png"
     alt="Positions Dashboard"
-    style="max-width: 450px; width: 100%; height: auto;"
+    style="width: 100%; height: auto;"
   >
   <figcaption><em>Liquidity allocation + compute inventory</em></figcaption>
 </figure>
