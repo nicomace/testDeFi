@@ -37,3 +37,9 @@ sidebar: false
 - Monitoring of inventory drift, critical for market making strategies
 
 Particularly suited for range-based liquidity provision, delta-sensitive LP, and fee-driven market making.
+
+
+<figure>
+  <img src="/testDeFi/assets/images/positions/histo_positions.png" alt="Risk Dashboard">
+  <figcaption><em>Risk overview: LTV monitoring and exposure breakdown.</em></figcaption>
+</figure>
