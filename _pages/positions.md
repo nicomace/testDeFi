@@ -40,6 +40,16 @@ Particularly suited for range-based liquidity provision, delta-sensitive LP, and
 
 
 <figure>
-  <img src="/testDeFi/assets/images/positions/histo_positions.png" alt="Risk Dashboard">
-  <figcaption><em>Risk overview: LTV monitoring and exposure breakdown.</em></figcaption>
+  <img src="/testDeFi/assets/images/positions/histo_positions.png" alt="Positions Dashboard">
+  <figcaption><em>Create positions interface</em></figcaption>
+</figure>
+
+<figure>
+  <img src="/testDeFi/assets/images/positions/histo_positions1.png" alt="Positions Dashboard">
+  <figcaption><em>Liquidity allocation + compute inventory</em></figcaption>
+</figure>
+
+<figure>
+  <img src="/testDeFi/assets/images/positions/curr_positions.png" alt="Positions Dashboard">
+  <figcaption><em>Current active positions</em></figcaption>
 </figure>
