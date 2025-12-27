@@ -101,10 +101,11 @@ these datas are then used in other sheets to compute sensitive metrics
 </figure>
 
 The Liquidity Allocation step was added recently as it is necessary to assess the current value of the CLMM position. 
+
 *little reminder: in CLMM, depending of the value of the underlying crypto, the token1/token2 ratio will evolve dynamically. if token 1 increases, then the pool will automatically adjust by selling token1 for token2. For example, on WETH/USDC, we are locking some profits as WETH is rising*
+
 Using "Curr. Price", it recompute token1 and token2 quantities so we can get "Curr. Value"
 *here you'll find details regarding this Uniswap v3 computation process --> **LINK ATTACHED**
-
 
 
 this part is the "core engine" of the DeFi Monitoring toolkit. From position details to important metrics, it gives a quick shot of how your active positions are healthy, wealthy and risky
