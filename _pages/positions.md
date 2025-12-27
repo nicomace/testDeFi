@@ -109,3 +109,22 @@ Using "Curr. Price", it recompute token1 and token2 quantities so we can get "Cu
 
 
 this part is the "core engine" of the DeFi Monitoring toolkit. From position details to important metrics, it gives a quick shot of how your active positions are healthy, wealthy and risky
+
+
+
+<figure>
+  <img src="/testDeFi/assets/images/positions/harvest_fees.png" alt="Positions Dashboard">
+  <figcaption><em>Current active liquidity positions</em></figcaption>
+</figure>
+
+**Realized Fees Monitoring**
+
+in this sheet, earned fees are easily tracked by pool and by week. As per the screenshot, in green active pools are highlighted.
+In the parameter section (above "Add") button, you can pick week and pool. These 2 cells are drop-down lists. they are are dynamically built to show specifically active pools and existing week from the table.
+
+*disclaimer: this is a V1 for realized fees monitoring. In V2, we will be able to put fees directly from the "Active positions dashboard", optimizing data integration and reducing risk of fat finger.*
+
+- Add Button
+Using Apps Script from GoogleSheets, this algorithm will add the selected fees to the specific week and pool attached. In the example above, the parameters would add 7$ to the pre existing fees of 6,70$.
+
+In the tracker, this section is a must as it creates a dynamic environment to follow realized gains from AMM positions without noise.
