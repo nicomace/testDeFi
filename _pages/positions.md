@@ -71,7 +71,7 @@ The above dashboard is developped from the module 2, where all the positions dat
 This module also provides the Uniswap V3 computation method for liquidity allocation. It gives the current value and inventory of the position (tk0_new, tk1_new).
 *Algo will be later implemented in code*
 
-<figure>
+<figure class="img-medium">
   <img
     src="/testDeFi/assets/images/positions/histo_positions1.png" alt="Positions Dashboard">
   <figcaption><em>Liquidity allocation + compute inventory</em></figcaption>
