@@ -25,9 +25,7 @@ sidebar: false
   }
 </style>
 
-
-
-
+<br>
 **TL;DR**  
 > This module treats CLMM LP positions as **market making strategies**, not yield farming.  
 > It monitors:
