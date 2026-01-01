@@ -26,17 +26,45 @@ sidebar: false
 </style>
 
 
-⚠️ Risk Exposure Analysis
-- Aggregation of risk across:
-- Lending/borrowing
-- LP positions
-- Asset concentration
-- Identification of hidden correlations between positions
-- Focus on key DeFi risk dimensions:
-- Liquidation risk
-- Impermanent loss risk
-- Volatility and range risk
-- Protocol dependency risk
+<figure>
+  <img src="/testDeFi/assets/images/risk/risk.png" alt="Risk Dashboard">
+  <figcaption><em>Risk monitoring</em></figcaption>
+</figure>
 
-The toolkit aims to answer one question clearly:
-“Where can this portfolio break under stress?”
+
+We introduce this module as an operational monitoring layer built to manage idle positions.
+
+-> This risk view is intentionally simple and action-oriented.
+
+## Purpose
+-	What is the status of the portfolio?
+-	Do I have inactive positions?
+-	What is the opportunity cost?
+-	What action should I take NOW?
+
+## Scope of the module
+As each position works differently (asset, range, volatility), this module aims to create an easy call-to-action (or not).
+
+Thinking as an opportunity cost on out-of-range (OOR) position, restores control on what action perform to reduce non profitable but risky positions.
+
+## Risk Logic
+When talking about fast decision-making, the rules need to be forward: time-based OOR.
+
+-> How much earnings am I losing while OOR?
+
+-	2D: Acceptable as market conditions could interfere (ex: volatility spike).
+-	3D to 5D: Opportunity cost that needs to be **monitored**. Perhaps market structure is changing.
+-	5D+: Enough to consider adapting strategy: **rebalance** or **exit** depending on the market structure.
+
+## Limitations
+This module deliberately excludes some risks such as Impermanent Loss (inherent to AMM structure). We especially focus on LP strategies here, so no need to compare with HODL.
+
+Directional drawdowns caused by inventory exposure are intentionally outside the current scope.
+
+Hedging strategies for inventory drift are identified as a potential future extension of this risk framework.
+
+
+
+
+
+
