@@ -26,15 +26,14 @@ sidebar: false
 </style>
 
 
+We introduce this module as an operational monitoring layer built to manage idle positions.
+
+-> This risk view is intentionally simple and action-oriented.
+
 <figure>
   <img src="/testDeFi/assets/images/risk/risk.png" alt="Risk Dashboard">
   <figcaption><em>Risk monitoring</em></figcaption>
 </figure>
-
-
-We introduce this module as an operational monitoring layer built to manage idle positions.
-
--> This risk view is intentionally simple and action-oriented.
 
 ## Purpose
 -	What is the status of the portfolio?
@@ -60,7 +59,6 @@ When talking about fast decision-making, the rules need to be forward: time-base
 This module deliberately excludes some risks such as Impermanent Loss (inherent to AMM structure). We especially focus on LP strategies here, so no need to compare with HODL.
 
 Directional drawdowns caused by inventory exposure are intentionally outside the current scope.
-
 Hedging strategies for inventory drift are identified as a potential future extension of this risk framework.
 
 
