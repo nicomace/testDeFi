@@ -1,5 +1,5 @@
 ---
-title: "Performance Overview"
+title: "Performance Attribution & Fee Management"
 permalink: /project/performance/
 layout: single
 classes: wide
