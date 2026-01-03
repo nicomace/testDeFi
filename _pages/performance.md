@@ -26,16 +26,56 @@ sidebar: false
 </style>
 
 
-📈 Performance Tracking Over Time
 
--	Monitoring of portfolio performance across time
--	Separation between:
--	Fees generated
--	Price impact
--	Capital rebalancing effects
--	Comparison of:
--	Estimated returns vs realized returns
--	Strategy efficiency across different market regimes
--	Designed to evaluate market making profitability beyond raw APR
+## Objective
+Liquidity provision is not about chasing APR.
+It is about managing inventory risk and extracting fees efficiently.
 
-Performance without risk context is noise. This toolkit links both.
+In Position module [HERE], returns are estimated with weekly harvest fees. 
+As LP are highly dynamic, we can only assume an estimated return. While realized return can be computed when position is closed.
+
+To summarize:
+-	Expected return -> decision support
+-	Realized return -> performance measurement
+
+
+## Fee Management Process
+
+<figure>
+  <img src="/testDeFi/assets/images/performance/performance.png" alt="Perf Dashboard">
+  <figcaption><em>Risk monitoring</em></figcaption>
+</figure>
+
+This layer aims to track all harvested fees. It records fees from active/inactive pools by weeks -> realized fees.
+
+I choose harvest Fees once per week. It makes sense as earnings start to be valuable.
+
+To keep the process simple, we input: Week, Pool and Fees. Then, It is automatically added in the table.
+*nb: only active pools and existing weeks are selectable*
+
+All the fees-related data in the Dashboard comes from this layer.
+
+
+## Performance Measurement Framework
+
+<figure>
+  <img src="/testDeFi/assets/images/performance/harvest_fees.png" alt="Perf Dashboard">
+  <figcaption><em>Risk monitoring</em></figcaption>
+</figure>
+
+To compute the overall realized return, positions must be closed.
+Capturing fees from the Fees layer and processing the inventory drift between open / close, we can finally compute the net outcome of this position.
+
+Meanwhile Duration is used to measure the daily performance of the position. 
+-> Daily return allows performance comparison across positions with different lifetimes.
+
+This module shows us if the position was sufficiently compensated for the associated risk.
+
+
+## Why this matters
+-	Fees do not compensate poor range management
+-	Picking wisely underlying crypto is essential (beware of too much vol)
+-	Time matters more than expected APR
+
+
+**Performance without risk context is noise. This toolkit links both.**
