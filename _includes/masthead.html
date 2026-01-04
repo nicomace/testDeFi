@@ -1,3 +1,51 @@
+<style>
+  /* On force l'alignement de la liste principale */
+  .visible-links {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow: visible !important;
+  }
+
+  /* On isole l'élément Project */
+  .masthead__menu-item {
+    position: relative !important;
+  }
+
+  /* Style du sous-menu (le dropdown) */
+  ul.sub-menu {
+    display: none !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    background-color: #111 !important; /* Fond noir */
+    min-width: 200px !important;
+    z-index: 9999 !important;
+    padding: 10px 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5) !important;
+  }
+
+  /* Affichage au survol */
+  .masthead__menu-item:hover ul.sub-menu {
+    display: block !important;
+  }
+
+  /* Liens à l'intérieur du menu */
+  ul.sub-menu li {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  ul.sub-menu li a {
+    padding: 10px 20px !important;
+    color: #fff !important;
+    display: block !important;
+    border-bottom: none !important;
+  }
+</style>
+
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
