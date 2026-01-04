@@ -1,6 +1,6 @@
 ---
 title: "About"
-permalink: /testDeFi/about/
+permalink: /about/
 layout: single
 classes: wide about-page
 author_profile: false
