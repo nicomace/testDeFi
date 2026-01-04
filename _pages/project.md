@@ -1,6 +1,6 @@
 ---
 title: "DeFi Risk Monitoring Toolkit"
-permalink: /testDeFi/project/
+permalink: /project/
 layout: single
 classes: wide
 author: false
