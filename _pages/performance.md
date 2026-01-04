@@ -25,6 +25,7 @@ sidebar: false
   }
 </style>
 
+<br>
 Liquidity provision is not about chasing APR.
 It is about managing inventory risk and extracting fees efficiently.
 
