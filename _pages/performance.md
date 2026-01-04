@@ -43,7 +43,7 @@ To summarize:
 
 <figure>
   <img src="/testDeFi/assets/images/performance/performance.png" alt="Perf Dashboard">
-  <figcaption><em>Risk monitoring</em></figcaption>
+  <figcaption><em>Performance per ended pool</em></figcaption>
 </figure>
 
 This layer aims to track all harvested fees. It records fees from active/inactive pools by weeks -> realized fees.
@@ -60,7 +60,7 @@ All the fees-related data in the Dashboard comes from this layer.
 
 <figure>
   <img src="/testDeFi/assets/images/performance/harvest_fees.png" alt="Perf Dashboard">
-  <figcaption><em>Risk monitoring</em></figcaption>
+  <figcaption><em>Harvested Fees screen</em></figcaption>
 </figure>
 
 To compute the overall realized return, positions must be closed.
@@ -77,5 +77,5 @@ This module shows us if the position was sufficiently compensated for the associ
 -	Picking wisely underlying crypto is essential (beware of too much vol)
 -	Time matters more than expected APR
 
-
+<br>
 **Performance without risk context is noise. This toolkit links both.**
