@@ -1,13 +1,13 @@
 main:
   - title: "Project"
-    url: /project/
+    url: /testDeFi/project/
     children:
       - title: "Positions"
-        url: /project/positions/
+        url: /testDeFi/project/positions/
       - title: "Risk Overview"
-        url: /project/risk/
+        url: /testDeFi/project/risk/
       - title: "Performance"
-        url: /project/performance/
+        url: /testDeFi/project/performance/
 
   - title: "About"
     url: /about/
