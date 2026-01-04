@@ -1,6 +1,6 @@
 ---
 title: "Performance Attribution & Fee Management"
-permalink: /testDeFi/project/performance/
+permalink: /project/performance/
 layout: single
 classes: wide
 author: false
