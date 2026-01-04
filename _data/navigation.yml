@@ -2,10 +2,12 @@ main:
   - title: "Project"
     url: /project/
     children:
-      - title: "Category 1"
-        url: /project/category-1/
-      - title: "Category 2"
-        url: /category-2/
+      - title: "Positions"
+        url: /project/positions/
+      - title: "Risk Overview"
+        url: /project/risk/
+      - title: "Performance"
+        url: /project/performance/
+
   - title: "About"
     url: /about/
-    
