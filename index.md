@@ -5,34 +5,6 @@ classes: wide
 author_profile: true
 ---
 
-## Presentation
-
-My name is **Nicolas Macé**.
-
-I graduated from an engineering school with a specialization in **financial engineering**, and I worked for several years in **investment banking** in trading support and risk-related roles.
-
-Alongside my professional experience, I have been actively involved in **DeFi and crypto markets**, managing real positions and developing my own monitoring tools to better understand **risk, performance, and exposure**.
-
----
-
-## Background
-
-### TradFi
-
--	Experience in real time trading support supporting trading, risk activities
--	Exposure to equity, derivatives, fixed income and FX products
--	Strong focus on risk monitoring, incident analysis, and PnL consistency
--	Used to work in time-sensitive, high-stakes environments
--	Development of production monitoring tool
-
-### DeFi
-
-- Project analysis: key metrics (tvl, revenues), tokenomics, chartism, risk/return
-- Active user of DeFi protocols (lending/borrowing, liquidity provision, yield farming)
-- Hands-on experience with **CLMM LP positions**, treated as market making strategies
-- Development of personal dashboards and monitoring tools to track positions over time
-
----
 
 ## Why this project
 
