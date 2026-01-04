@@ -1,6 +1,6 @@
 main:
   - title: "Project"
-    url: /project/
+    # url: /project/
     children:
       - title: "Positions"
         url: /project/positions/
