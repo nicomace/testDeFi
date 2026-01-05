@@ -30,7 +30,7 @@ Liquidity provision is not about chasing APR.
 It is about managing inventory risk and extracting fees efficiently.
 
 ## Objective
-In [Risk Overview](/testDeFi/project/risk/), returns are estimated with weekly harvest fees. 
+In [Operational Risk](/testDeFi/project/risk/), returns are estimated with weekly harvest fees. 
 As LP are highly dynamic, we can only assume an estimated return, while realized return is computed when position is closed.
 
 To summarize:
