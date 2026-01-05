@@ -7,51 +7,33 @@ author_profile: true
 
 
 ## Why this project
+With Uniswap V3 released, the new features such as capital efficiency and customized ranges reshaped how market making strategies are designed. 
+But it came with a performance cost if price drifts from the selected range creating idle capital and asymmetric directional exposure.
+The purpose is to understand what each situation can cost if it remains, focusing on: monitoring risk to optimize performance.
+Key cost indicators:
+-	Time (out-of-range)
+-	Capital inefficiency (impermanent loss, inventory drift)
 
-Starting interacting with DeFi protocols, I wanted to create a strategy and what is the best way to monitore on-chain activity except creating our own tools. Especially I wanted to focus on CLMM (Concentrated Liquidity Market Making) strategies. And as time goes and new solutions appear to us, I needed to get a quick view on my LP (liquidity providing) portfolio to be able to measure important metrics. 
-This have double benefits: first is to get a better understanding of the key components of CLMM and act practively on my strategy depending on the market conditions.
-Deepening such DeFi protocls made me realize that risk is more important than performance. The idea is to optimize our risk/return. Controlling our loss ensure a major part of our global startegy. 
+**What we currently find**
+In CLMM (Concentrated Liquidity Market Making), existing interfaces are insufficient:
+-	They show pool and position details (TVL, estimated APR, range, inventory). 
+-	But they are fragmented and limited in quantifying risk in real time.
+In this context, I developed a framework to measure CLMM strategies efficiency. 
 
-**What’s now:**
-
-Entering a LP position we can find relevant informations such as:
--	TVL
--	Estimated APY
--	Positions
--	Token balance
-
-This is a good start to assess the pool performance.
-But we also need to monitore the risk metrics. Because there are plenty:
--	Impermanent Loss
--	Inventory risk
--	Out of Range
--	protocol and token exposure
-
-If we can understand what each situation can cost, we can improve the overall portoflio return. 
-
-And here is the focus of the tool I am building: monitoring risk to optimize the performance.
-
-This project was created to bring a more **disciplined, risk-oriented approach** to DeFi strategies, inspired by institutional practices.
-
-
-## Current focus
-
-- Monitoring lending and borrowing positions (LTV, liquidation buffers)
+## Framework structure
+This project was created to bring a more disciplined, risk-oriented approach to DeFi strategies, inspired by institutional practices:
+- Monitoring lending and borrowing positions (LTV, liquidation buffers).
 - Tracking CLMM LP positions:
   - in-range / out-of-range status
   - inventory exposure
   - fee generation
-- Following performance over time with a **net PnL approach**
-- Understanding portfolio-level exposure across tokens and protocols
+- Following performance over time with a **net PnL approach**.
+- Understanding portfolio-level exposure across tokens and protocols.
 
-
-## Project
-
-This website is a **work in progress** and serves as a technical and conceptual showcase for my DeFi Risk Monitoring Toolkit.
-
+## Last word
 You can explore the project here:
 
-👉 [DeFi Risk Monitoring Toolkit](/testDeFi/project/)
+👉 [DeFi Risk & Performance Framework](/testDeFi/project/)
 
 
 <br>
