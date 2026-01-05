@@ -1,5 +1,5 @@
 ---
-title: "Risk Overview"
+title: "Operational Risk"
 permalink: /project/risk/
 layout: single
 classes: wide
