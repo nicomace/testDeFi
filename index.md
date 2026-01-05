@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Welcome"
+title: "Overview"
 classes: wide
 author_profile: true
 ---
@@ -8,8 +8,10 @@ author_profile: true
 
 ## Why this project
 With Uniswap V3 released, the new features such as capital efficiency and customized ranges reshaped how market making strategies are designed. 
+
 But it came with a performance cost if price drifts from the selected range creating idle capital and asymmetric directional exposure.
 The purpose is to understand what each situation can cost if it remains, focusing on: monitoring risk to optimize performance.
+
 Key cost indicators:
 -	Time (out-of-range)
 -	Capital inefficiency (impermanent loss, inventory drift)
