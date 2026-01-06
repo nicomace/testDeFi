@@ -33,10 +33,7 @@ This project was created to bring a more disciplined, risk-oriented approach to 
 - Understanding portfolio-level exposure across tokens and protocols.
 
 ## Last word
-You can explore the project here:
-
-👉 [DeFi Risk & Performance Framework](/testDeFi/project/)
-
+You can explore the project here: [DeFi Risk & Performance Framework](/testDeFi/project/)
 
 <br>
 Feel free to reach out if you’re interested in **DeFi risk, market making, or portfolio analytics**.
