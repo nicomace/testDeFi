@@ -12,6 +12,7 @@ nav_order: 1
 
 {: .note }
 > **TL;DR**
+> 
 > This module treats CLMM LP positions as **market making strategies**, not yield farming.
 > It monitors:
 > - **in-range / out-of-range status** and distance to bounds  
