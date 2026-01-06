@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Why this project"
+title: "Home"
 nav_order: 1
-# Si tu veux que ce soit une sous-page d'un menu "Projets", décommente la ligne suivante :
-# parent: Projects 
+description: "DeFi Risk & Performance Framework Portfolio"
+# nav_exclude: true # Décommente ceci si tu ne veux pas voir "Home" dans le menu de gauche
 ---
 
 # Why this project
@@ -42,8 +42,15 @@ In this context, I developed a framework to measure CLMM strategies efficiency.
 - **Following performance** over time with a **net PnL approach**.
 - **Understanding portfolio-level exposure** across tokens and protocols.
 
-## Last word
-You can explore the project here: [DeFi Risk & Performance Framework]({{ site.baseurl }}/project/)
+---
+
+## Explore the Project
+{: .no_toc .text-delta }
+
+Pour naviguer dans le framework, utilisez le menu latéral ou les liens ci-dessous :
+
+1.  **[DeFi Risk & Performance Framework]({{ site.baseurl }}/project/)** (Overview)
+2.  **[About Me]({{ site.baseurl }}/about/)** (Background & CV)
 
 <br>
 Feel free to reach out if you’re interested in **DeFi risk, market making, or portfolio analytics**.
