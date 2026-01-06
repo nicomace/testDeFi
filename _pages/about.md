@@ -27,8 +27,6 @@ nav_order: 10  # Un nombre élevé pour le placer à la fin du menu
 
 ---
 
-My name is **Nicolas Macé**.
-
 I graduated from an engineering school with a specialization in **financial engineering**, and I worked for several years in **investment banking** in trading support and risk-related roles.
 
 Alongside my professional experience, I have been actively involved in **DeFi and crypto markets**, managing real positions and developing my own monitoring tools to better understand **risk, performance, and exposure**.
