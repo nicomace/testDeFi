@@ -43,6 +43,35 @@
     display: block !important;
     border-bottom: none !important;
   }
+
+
+  /* --- STYLE FORCE POUR LE TOC (SIDEBAR) --- */
+
+/* Force le bandeau de titre "On this page" */
+  .toc__menu .nav__title, 
+  .nav__list .nav__title {
+    background-color: #f5f5dc !important; /* Beige */
+    color: #111 !important;               /* Texte noir */
+  }
+  
+  /* Force le cadre extérieur */
+  .sidebar .nav__list, 
+  .toc__menu {
+    border: 1px solid #f5f5dc !important;
+    border-radius: 4px !important;
+  }
+  
+  /* Change la couleur des puces/liens au survol dans le TOC */
+  .toc__menu li a:hover,
+  .toc__menu li a.is-active {
+    color: #f5f5dc !important;
+    border-left-color: #f5f5dc !important;
+  }
+  
+  /* Supprimer toute bordure rose résiduelle sur les liens */
+  .toc__menu a {
+    border-bottom: none !important;
+  }
 </style>
 
 
