@@ -68,5 +68,5 @@ Hedging strategies for inventory drift are identified as a potential future exte
 ### Complementary Risk Monitoring
 In addition to LP operational risk, liquidation risk on lending positions is monitored through a dedicated LTV overview and automated alerts.
 
-[Detailled here: Lend & borrow status]({{ site.baseurl }}_pages/positions/#lend--borrow-status)
+[Detailled here: Lend & borrow status]({{ site.baseurl }}/_pages/positions/#lend--borrow-status)
 {: .btn .btn-outline }
