@@ -1,118 +1,50 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: NicoMace Portfolio
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: "dark"
-search: false
+description: "Applying institutional risk management principles to DeFi portfolios and CLMM market making."
+email: 
 
-# Build settings
+# Paramètres d'URL (Conservés tels quels)
 url: "https://nicomace.github.io"
 baseurl: "/testDeFi"
+
+# Thème : Passage à Just the Docs
+remote_theme: just-the-docs/just-the-docs
+
+# Navigation et Recherche (Spécifiques à Just the Docs)
+nav_enabled: true
+search_enabled: true
+search_tokenizer_separator: /[\s\-/]+/
+
+# Configuration de la charte graphique (Équivalent au skin "dark")
+color_scheme: dark 
+
+# Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-# Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-include:
-  - _pages
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
+# Plugins
+# Note: Just the Docs gère nativement beaucoup de choses, 
+# mais on garde l'essentiel.
 plugins:
-  - jekyll-paginate
+  - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
 
-author:
-  name   : "Nicolas Macé"
-  avatar : "/assets/images/IMG-20250527-WA0005-2.jpg"
-  bio    : "Applying institutional risk management principles to DeFi portfolios and CLMM market making."
-  links:
-    - label: "Linkedin"
-      icon: "fa-brands fa-linkedin"
-      url: "https://www.linkedin.com/in/macenicolas/"
-    #- label: "Website"
-     # icon: "fas fa-fw fa-link"
-      #url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://x.com/niclos96"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    #- label: "Instagram"
-     # icon: "fab fa-fw fa-instagram"
-      #url: "https://instagram.com/"
+# Configuration du pied de page (Just the Docs style)
+footer_content: "Copyright &copy; 2025 Nicolas Macé. Construit avec Just the Docs."
 
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+# Liens sociaux pour le menu latéral (Sidebar)
+aux_links:
+  "Linkedin": "https://www.linkedin.com/in/macenicolas/"
+  "GitHub": "https://github.com/nicomace"
+  "Twitter": "https://x.com/niclos96"
 
+# Paramètres par défaut des pages
 defaults:
-  # _posts
   - scope:
       path: ""
-      type: posts
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-      navigation: main
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+      layout: default # Changement de 'single' à 'default'
