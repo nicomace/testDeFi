@@ -26,15 +26,12 @@ toc: false
 </style>
 
 
-## Presentation
-
 My name is **Nicolas Macé**.
 
 I graduated from an engineering school with a specialization in **financial engineering**, and I worked for several years in **investment banking** in trading support and risk-related roles.
 
 Alongside my professional experience, I have been actively involved in **DeFi and crypto markets**, managing real positions and developing my own monitoring tools to better understand **risk, performance, and exposure**.
 
----
 
 ## Background
 
@@ -53,12 +50,9 @@ Alongside my professional experience, I have been actively involved in **DeFi an
 - Hands-on experience with **CLMM LP positions**, treated as market making strategies
 - Development of personal dashboards and monitoring tools to track positions over time
 
----
-
-
-This CV summarizes my background across **TradFi market infrastructure** and **DeFi risk & analytics**.
 
 ## Curriculum Vitae
+This CV summarizes my background across **TradFi market infrastructure** and **DeFi risk & analytics**.
 
 <p class="cv-actions">
   <a class="btn btn--primary" href="/testDeFi/assets/images/CryptoCV.pdf" target="_blank" rel="noopener">
@@ -77,5 +71,3 @@ This CV summarizes my background across **TradFi market infrastructure** and **D
   </iframe>
 </div>
 
-
----
