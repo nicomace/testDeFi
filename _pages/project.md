@@ -65,11 +65,6 @@ This toolkit is designed to answer, at a glance:
   <strong>TradFi bridge:</strong> Think of it as a lightweight “risk desk” for DeFi, built for CLMM LPs, lending/borrowing strategies, and on-chain market making.
 </div>
 
-<figure>
-  <img src="/testDeFi/assets/images/framework-flow.png" alt="Project dashboard">
-  <figcaption><em>Framework flow</em></figcaption>
-</figure>
-
 ![Framework flow](/testDeFi/assets/images/framework-flow.png){: .align-center width="520" }
 
 ## What it covers
