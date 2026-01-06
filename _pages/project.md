@@ -99,6 +99,25 @@ Measures real LP performance beyond headline APR.
 
 **Go deeper →** [Performance Overview](/testDeFi/project/performance/)
 
+---
+
+<div class="framework-flow">
+  <div class="flow-box">
+    <strong>Position Monitoring</strong><br>
+    <span>Live position state</span>
+  </div>
+  <div class="flow-arrow">↓</div>
+  <div class="flow-box">
+    <strong>Risk Overview</strong><br>
+    <span>Exposure & health</span>
+  </div>
+  <div class="flow-arrow">↓</div>
+  <div class="flow-box">
+    <strong>Performance Overview</strong><br>
+    <span>Economic outcome</span>
+  </div>
+</div>
+
 
 ## Key metrics (the “risk desk” layer)
 
