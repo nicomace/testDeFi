@@ -45,11 +45,13 @@ excerpt: "A structured approach to monitoring liquidity, risk exposure and perfo
 ## Overview
 
 The DeFi Risk Monitoring Toolkit is a personal, research-driven framework designed to monitor, analyze, and manage risk across decentralized finance strategies, with a strong focus on capital efficiency, liquidity provision, and market making mechanics.
-Built from real-world DeFi usage, this toolkit aims to bridge the gap between on-chain execution and institutional-style risk monitoring, inspired by practices found in traditional trading, treasury, and market making desks.
+
+Built from real-world DeFi usage, this framework aims to bridge the gap between on-chain execution and institutional-style risk monitoring, inspired by practices found in traditional trading, treasury, and market making desks.
+
 The objective is simple:
+
 👉 turn fragmented DeFi positions into a coherent, risk-aware portfolio view.
 
----
 
 ## Why this toolkit exists
 
@@ -61,65 +63,58 @@ This toolkit is designed to answer, at a glance:
 - *What should I do next?* (actionable alerts + prioritized checklist)
 
 <div class="notice--info">
-  <strong>TradFi bridge:</strong> Think of it as a lightweight “risk desk” for DeFi — built for CLMM LPs, lending/borrowing strategies, and on-chain market making.
+  <strong>TradFi bridge:</strong> Think of it as a lightweight “risk desk” for DeFi, built for CLMM LPs, lending/borrowing strategies, and on-chain market making.
 </div>
 
----
 
 ## What it covers
 
-*IN BUILD*
+### 1. Position Monitoring (CLMM / LP)
+This module focuses on operational monitoring of active positions.
+- Live state: in-range/out-of-range
+- Postion value with/without fees, expected APR
+- Inventory composition (token0, token1) and evolution
 
----
-
-## Modules
-
-### 1. Position Monitoring (CLMM / LP / MM)
-- Live state: in-range/out-of-range, range distance, inventory composition
-- Operational workflow: rebalance triggers, harvest cadence, deployment sizing
-- “MM mindset”: inventory risk, price range risk, fee volatility
-
+Goal: get a clear view on a global and per-position porfolio status. 
 **Go deeper →** [Position Monitoring](/testDeFi/project/positions/)
 
 ### 2. Risk Overview
+This module agregates risk indicators for CLMM positions.
+- Opportunity cost of inactive positions
+- Call-to-action indicator for inactive position
 - Lending/borrowing health: LTV monitoring, liquidation distance, collateral concentration
-- CLMM risk: out-of-range probability cues, inventory drift, exposure by token
-- Portfolio exposure: token, protocol, chain, stablecoin issuer, bridge/oracle dependencies
 
+Goal: assess risk of inactive position and take actions to reduce time efficiency.
 **Go deeper →** [Risk Overview](/testDeFi/project/risk/)
 
 ### 3. Performance Overview
-- Net performance over time: **fees – IL – funding – borrow cost**
-- Per-position scorecards: realized vs unrealized, volatility regimes, fee consistency
-- Strategy lens: range width, rebalancing frequency, fee-to-risk efficiency
+This module analyses realized performance per position.
+- Net performance over time: **fees, inventory change**
+- Fee management: harvest cadence per pool
 
+Goal: Measure realized performance vs "APR" and economic efficiency. 
 **Go deeper →** [Performance Overview](/testDeFi/project/performance/)
 
----
 
 ## Key metrics (the “risk desk” layer)
 
 **Lending / Borrowing**
-- Current LTV, liquidation LTV, buffer (%), stress-LTV (scenario)
-- Borrow APR vs Supply APR vs net carry
-- Collateral correlation / concentration (top 3)
+- Current LTV, liquidation LTV
 
 **CLMM / LP**
-- In-range status + distance to bounds
+- In-range status
 - Inventory split (token0/token1) and drift
 - Fee velocity (daily/weekly), volatility proxy
 - Net PnL decomposition (fees vs IL)
 
 **Portfolio**
 - Exposure by token / protocol / chain
-- “Single-point-of-failure” flags: stable issuer, bridge, oracle dependency
 
----
 
 ## Architecture (simple, reliable, extendable)
 
 - **Storage**: Google Sheets (fast iteration) + optional exports
-- **Logic**: formulas + scripts (Apps Script / Python optional)
+- **Logic**: formulas + scripts (Apps Script)
 - **Outputs**: dashboards, alerts, and weekly reports
 
 <div class="notice--success">
