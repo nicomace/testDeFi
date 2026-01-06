@@ -11,17 +11,21 @@ nav_order: 3
 <br>
 
 {: .important }
-> Liquidity provision is not about chasing APR. It is about **managing inventory risk** and **extracting fees efficiently**.
+> Liquidity provision is not about chasing APR.
+>
+> It is about **managing inventory risk** and **extracting fees efficiently**.
 
 ---
 
 ## Objective
 {: .no_toc .text-delta }
 
-Comme expliqué dans la section [Operational Risk]({{ site.baseurl }}/project/risk/), les rendements estimés servent d'aide à la décision, mais seul le rendement réalisé compte pour la mesure de performance.
+In [Operational Risk]({{ site.baseurl }}/project/risk/), returns are estimated with weekly harvest fees. 
+As LP are highly dynamic, we can only assume an estimated return, while realized return is computed when position is closed.
 
-- **Expected return** → Support à la décision.
-- **Realized return** → Mesure de la performance réelle (calculée à la clôture).
+To summarize:
+-	Expected return -> decision support
+-	Realized return -> performance measurement
 
 ---
 
@@ -32,12 +36,13 @@ Comme expliqué dans la section [Operational Risk]({{ site.baseurl }}/project/ri
 *Harvested Fees tracking interface*
 {: .text-center .text-small }
 
-Ce module permet de suivre l'intégralité des frais récoltés (harvested fees). Il enregistre les revenus des pools actives et inactives par semaine pour obtenir les **frais réalisés**.
+This layer aims to track all harvested fees. It records fees from active/inactive pools by weeks -> realized fees.
 
+All the fees-related data in the Dashboard comes from this layer.
 ### Workflow
-* **Cadence** : Récolte hebdomadaire (pour optimiser les coûts de transaction et la pertinence des données).
-* **Simplicité** : Saisie rapide (Semaine, Pool, Montant). Les données alimentent automatiquement le tableau de bord global.
-* **Contrôle** : Seules les pools actives et les périodes existantes sont sélectionnables pour éviter les erreurs de saisie.
+* **Cadence**: Weekly harvest (optimizing transaction costs + earnings start to be valuable)
+* **Simplicity** : Fast input (Week, Pool, Amount). Then, It is automatically added in the table.
+* **Control** : Only active pools and existing weeks are selectable.
 
 ---
 
@@ -48,22 +53,25 @@ Ce module permet de suivre l'intégralité des frais récoltés (harvested fees)
 *Net performance analysis for closed positions*
 {: .text-center .text-small }
 
-Pour calculer le rendement réalisé global, la position doit être clôturée. Le framework croise alors :
-1. Les frais capturés (via la couche *Fees*).
-2. Le **drift d'inventaire** (différence de valeur entre l'ouverture et la fermeture).
+To compute the overall realized return, positions must be closed.
 
-{: .note }
-Le **Daily Return** est notre métrique clé : il permet de comparer la performance de positions ayant des durées de vie différentes.
+This module shows us if the position was sufficiently compensated for the associated risk. Here is how it works:
+1. Captured fees (through the *Fees layer*).
+2. Inventory drift (difference between open / close).
 
-Ce module répond à la question cruciale : *La prise de risque a-t-elle été suffisamment rémunérée ?*
+Meanwhile Duration is used to measure the daily performance of the position. 
+<br>
+-> Daily return allows performance comparison across positions with different lifetimes.
+
+This module answer the crucial question: *Is the compensation enough for the associated risk taken?*
 
 ---
 
 ## Why this matters
 
-* **Fees vs Management** : Les frais accumulés ne compensent jamais une mauvaise gestion de "range".
-* **Asset Selection** : Le choix des actifs sous-jacents reste primordial (attention à l'excès de volatilité).
-* **Time Sensitivity** : Le facteur temps est plus important que l'APR affiché.
+-	**Fees vs Management**: Fees do not compensate poor range management
+-	**Asset Selection**: Picking wisely underlying crypto is essential (beware of too much vol)
+-	**Time Sensitivity**: Time matters more than expected APR
 
 <br>
 
