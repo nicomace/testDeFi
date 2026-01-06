@@ -44,49 +44,46 @@
     border-bottom: none !important;
   }
 
-/* --- STYLE FINAL DU TOC : BORDURES UNIQUEMENT --- */
+/* --- STYLE FINAL : CADRE BEIGE & TEXTE LISIBLE --- */
 
-/* 1. Le titre "On this page" : Fond beige, texte noir */
-  .toc__menu .nav__title, 
-  .sidebar .nav__list .nav__title {
-      background-color: #f5f5dc !important; /* Fond beige */
-      color: #000 !important;               /* Texte noir pour contraste */
-      border: 1px solid #f5f5dc !important;
-      margin: 0 !important;
-      border-radius: 4px 4px 0 0 !important; /* Arrondis en haut seulement */
-  }
-  
-  /* 2. Le cadre de la liste : Bordure beige, FOND NOIR */
+  /* 1. Le cadre extérieur global : Bordure beige uniquement */
   .toc__menu, 
   .sidebar .nav__list {
       border: 1px solid #f5f5dc !important;
-      background-color: #000 !important;    /* Force le fond noir */
+      background-color: #000 !important; /* On garde le fond bien noir */
       border-radius: 4px !important;
       padding: 0 !important;
+      overflow: hidden !important;
   }
   
-  /* 3. Les liens de la liste : Texte blanc, pas de fond beige */
+  /* 2. Le bandeau de titre "On this page" : Fond beige, Texte noir */
+  .toc__menu .nav__title,
+  .sidebar .nav__list .nav__title {
+      background-color: #f5f5dc !important; /* Force le BEIGE ici */
+      color: #000 !important;               /* Texte NOIR pour que ce soit lisible */
+      border: none !important;
+      margin: 0 !important;
+  }
+  
+  /* 3. Les liens dans la liste : Texte blanc, pas de rose */
   .toc__menu li a, 
   .sidebar .nav__list li a {
-      color: #fff !important;               /* Texte blanc */
-      background-color: transparent !important; 
-      border-bottom: 1px solid #222 !important; /* Ligne de séparation fine */
-      padding: 10px 15px !important;
-      display: block;
+      color: #fff !important; 
+      border-bottom: 1px solid #222 !important; /* Ligne de séparation sombre */
+      background: transparent !important;
   }
   
-  /* 4. Effet au survol et lien actif */
-  .toc__menu li a:hover, 
-  .toc__menu li a.is-active {
-      color: #f5f5dc !important;            /* Le texte devient beige au survol */
-      background-color: #111 !important;    /* Fond légèrement gris au survol */
+  /* 4. Supprimer la barre rose à gauche qui apparaît parfois */
+  .toc__menu li a.is-active,
+  .sidebar .nav__list li a.is-active {
+      border-left: 3px solid #f5f5dc !important; /* Barre beige à la place du rose */
+      color: #f5f5dc !important;
   }
   
-  /* On enlève la bordure du dernier élément */
-  .toc__menu li:last-child a {
-      border-bottom: none !important;
+  /* 5. L'icône (la petite liste) : On la force en noir pour aller avec le texte du titre */
+  .toc__menu .nav__title i {
+      color: #000 !important;
   }
-
 </style>
 
 
