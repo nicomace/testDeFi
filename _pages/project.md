@@ -1,21 +1,9 @@
 ---
 title: "DeFi Risk & Performance Framework"
-permalink: /project/
-layout: single
-classes: wide
-author: false
-author_profile: false
-sidebar: false
-toc: true
-toc_label: "On this page"
-toc_icon: "list"
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.45"
-  teaser: /assets/images/toolkit/cover.png
-  # overlay_image: /assets/images/toolkit/cover-wide.png
-excerpt: "A structured approach to monitoring liquidity, risk exposure and performance across DeFi positions."
+layout: default
+nav_order: 1  # 1 pour la première, 2 pour la suivante, etc.
 ---
+
 
 <style>
   /* Supprime les marges et force la largeur maximale sur le conteneur principal */
