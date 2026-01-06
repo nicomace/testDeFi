@@ -18,7 +18,6 @@ Alongside my professional experience, I have been actively involved in **DeFi an
 ---
 
 ## Background
-
 ### TradFi
 - **Trading Support & Risk**: Experience in real time trading support supporting trading, risk activities.
 - **Product expertise**: Exposure to equity, derivatives, fixed income and FX products.
