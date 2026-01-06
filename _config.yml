@@ -1,5 +1,5 @@
 # Site settings
-title: NicoMace Portfolio
+title: "NicoMace Portfolio<br><br><img src='/testDeFi/assets/images/IMG-20250527-WA0005-2.jpg' style='width:80px;border-radius:50%;border:2px solid #7253ed;'><br><span style='font-size:0.7em;font-weight:normal;color:#959396;'>Financial Engineering & DeFi Risk</span>"
 description: "Applying institutional risk management principles to DeFi portfolios and CLMM market making."
 
 # Paramètres d'URL
@@ -48,8 +48,8 @@ footer_content: "Copyright &copy; 2026 Nicolas Macé."
 # Liens rapides en haut de la sidebar
 aux_links:
   "Linkedin": "https://www.linkedin.com/in/macenicolas/"
-  "GitHub": "https://github.com/nicomace/testDeFi"
   "X": "https://x.com/niclos96"
+  "GitHub": "https://github.com/nicomace/testDeFi"
 
 # Paramètres par défaut
 defaults:
