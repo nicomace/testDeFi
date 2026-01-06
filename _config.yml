@@ -48,3 +48,4 @@ defaults:
       path: ""
     values:
       layout: default # Changement de 'single' à 'default'
+      
