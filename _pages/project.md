@@ -49,7 +49,7 @@ Track the live state of active DeFi positions.
 
 *Designed to support day-to-day LP and CLMM position management.*
 
-**[Go deeper →]({{ site.baseurl }}/project/positions/)**
+**[Go deeper →]({{ site.baseurl }}/_pages/positions/)**
 
 ### 2. Risk Overview
 Aggregates risk indicators for inactive positions.
@@ -59,7 +59,7 @@ Aggregates risk indicators for inactive positions.
 
 *Measures how inactive position improves risk.*
 
-**[Go deeper →]({{ site.baseurl }}/project/risk/)**
+**[Go deeper →]({{ site.baseurl }}/_pages/risk/)**
 
 ### 3. Performance Overview
 Measures real LP performance beyond headline APR.
@@ -69,7 +69,7 @@ Measures real LP performance beyond headline APR.
 
 *Focuses on economic efficiency, not advertised yields.*
 
-**[Go deeper →]({{ site.baseurl }}/project/performance/)**
+**[Go deeper →]({{ site.baseurl }}/_pages/performance/)**
 
 ---
 
