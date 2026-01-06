@@ -22,7 +22,7 @@ nav_external_links:
     url: https://github.com/nicomace/testDeFi
 
 # Recherche
-search_enabled: true
+search_enabled: false
 
 # Look & Feel
 color_scheme: dark 
