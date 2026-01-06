@@ -121,3 +121,21 @@ ul.sub-menu li a:hover {
   background-color: #333 !important;
   color: #f5f5dc !important; /* Rose clair au survol */
 }
+
+
+
+/* --- FORCE LE NOIR SUR TOUTES LES COUCHES INTERNES --- */
+
+#main, 
+.initial-content, 
+.page__content,
+.archive,
+article.page {
+  background-color: #000000 !important;
+}
+
+/* Supprime les bordures blanches/grises qui peuvent entourer le contenu */
+.page__inner-wrap {
+  background-color: #000000 !important;
+  box-shadow: none !important;
+}
