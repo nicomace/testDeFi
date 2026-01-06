@@ -101,3 +101,20 @@ ul.sub-menu li a:hover {
   background-color: #333 !important;
   color: #F5F5DC !important; /* Rose clair au survol */
 }
+
+
+
+/* Changer la couleur du cadre (bordure extérieure) */
+.toc__menu {
+  border: 1px solid #F5F5DC !important; /* Remplacez par votre couleur */
+  border-radius: 4px; /* Optionnel : arrondit légèrement les coins */
+}
+
+/* Changer la couleur des lignes de séparation entre les éléments */
+.toc__menu li {
+  border-bottom: 1px solid #333 !important; /* Ligne discrète entre les titres */
+}
+
+.toc__menu li:last-child {
+  border-bottom: none !important; /* Enlève la ligne pour le dernier élément */
+}
