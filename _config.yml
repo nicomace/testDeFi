@@ -11,9 +11,9 @@ remote_theme: just-the-docs/just-the-docs
 
 # Fix pour le Menu : Forcer Jekyll à inclure tes dossiers de contenu
 # Si tes fichiers sont dans "_pages", on dit à Jekyll de ne pas les ignorer
-include:
-  - _pages
-  - project 
+#include:
+ # - _pages
+ # - project 
 
 # Configuration de la navigation
 nav_enabled: true
