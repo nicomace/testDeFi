@@ -18,7 +18,6 @@ nav_order: 3
 ---
 
 ## Objective
-{: .no_toc .text-delta }
 
 In [Operational Risk]({{ site.baseurl }}/_pages/risk/), returns are estimated with weekly harvest fees. 
 As LP are highly dynamic, we can only assume an estimated return, while realized return is computed when position is closed.
