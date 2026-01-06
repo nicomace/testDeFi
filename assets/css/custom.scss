@@ -1,48 +1,61 @@
 ---
 ---
-// On définit les variables, mais on NE FAIT PAS l'import manuel
-// Just the Docs injectera ces variables automatiquement dans son propre build.
-
+// 1. SASS Variables (interpreted by Jekyll)
 $nav-width: 210px;         
 $nav-width-md: 230px;      
-$content-width: 1150px;    
+$content-width: 1200px;    
 
-// Forçage des dimensions (CSS pur)
-@media (min-width: 600px) {
+// 2. Width Adjustments (CSS overrides)
+@media (min-width: 67rem) {
   .side-bar {
-    width: 230px !important;
-    min-width: 230px !important;
+    width: $nav-width-md !important;
+    min-width: $nav-width-md !important;
   }
 
   .main {
-    margin-left: 230px !important;
+    margin-left: $nav-width-md !important;
   }
 
-  .main-content-wrap {
-    max-width: 1150px !important;
-    padding-left: 30px !important; 
+  // Target both containers to force extra width
+  .main-content,
+  .main-content-wrap,
+  .page-header {
+    max-width: $content-width !important;
+    width: 100% !important;
+    padding-left: 30px !important;
     padding-right: 30px !important;
   }
 }
 
-// Ton bloc profil
+// 3. Profile Section Style (nav_custom.html)
 .site-author {
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #3d3d3d;
+
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #7253ed;
+    margin-bottom: 10px;
+  }
+
+  .author-name {
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #eee;
+  }
+
+  .author-bio {
+    font-size: 0.85em;
+    color: #959396;
+    margin-top: 5px;
+    line-height: 1.4;
+  }
 }
-
----
----
-// ... tes réglages de largeur précédents ...
-
-.site-author {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; // Aligné à gauche comme tes liens
-  padding-left: 0;
-}
-
-// Optionnel : masquer le titre texte si tu veux que ta photo soit l'élément principal
-// .site-title { display: none; }
