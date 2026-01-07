@@ -1,6 +1,6 @@
 <style>
   @media (min-width: 67rem) {
-    /* 1. CONFIGURATION GLOBALE */
+    /* 1. CONFIGURATION PLEIN ÉCRAN */
     .container, .main-wrapper, .page-wrapper {
         max-width: none !important;
         width: 100% !important;
@@ -8,6 +8,7 @@
         display: flex !important;
     }
 
+    /* 2. SIDEBAR (25%) */
     .side-bar {
         width: 25% !important;
         min-width: 280px !important;
@@ -20,7 +21,7 @@
         z-index: 1000;
     }
 
-    /* 2. ALIGNEMENT DU TITRE (Référence) */
+    /* 3. ALIGNEMENT DU TITRE */
     .site-title {
         margin-top: 80px !important;
         padding-left: 20% !important; 
@@ -28,30 +29,30 @@
         display: block !important;
     }
 
-    /* 3. ALIGNEMENT DU SOMMAIRE (Suppression de l'espace fantôme) */
+    /* 4. ALIGNEMENT DU SOMMAIRE (SANS ESPACE) */
     .nav-list {
         padding-left: 20% !important; /* Même retrait que le titre */
         margin: 0 !important;
     }
 
     .nav-list-item {
-        /* On utilise une marge négative pour supprimer l'espace imposé par les icônes du thème */
-        margin-left: -18px !important; 
-        list-style: none !important;
         text-align: left !important;
+        list-style: none !important;
     }
 
+    /* C'est ici qu'on enlève l'espace de gauche interne aux liens */
     .nav-list-link {
         padding-left: 0 !important;
+        margin-left: -16px !important; /* Aspire le texte vers la gauche */
         display: inline-block !important;
     }
 
-    /* On cache les petites flèches de menu qui créent le décalage */
+    /* On enlève la flèche qui pousse le texte */
     .nav-list-expander {
         display: none !important;
     }
 
-    /* 4. CONTENU ET MARGE DROITE */
+    /* 5. CONTENU PRINCIPAL ET BARRE DU HAUT */
     .main {
         margin-left: 25% !important;
         width: 75% !important;
@@ -59,18 +60,11 @@
 
     .main-header, .main-content-wrap {
         padding-left: 60px !important;
-        padding-right: 5% !important; /* Ta marge de 5% à droite */
+        padding-right: 5% !important; /* Marge de 5% à droite */
         max-width: none !important;
     }
   }
 
-  /* 5. SUPPRESSION DÉFINITIVE DU CRÉDIT FOOTER */
-  footer.site-footer {
-      padding: 0 !important;
-  }
-  footer.site-footer p.text-small {
-      display: none !important;
-      height: 0;
-      margin: 0;
-  }
+  /* Cache les crédits */
+  footer.site-footer p.text-small { display: none !important; }
 </style>
