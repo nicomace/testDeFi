@@ -1,49 +1,41 @@
 <style>
   @media (min-width: 67rem) {
-    /* 1. Sidebar plus fine */
+    /* 1. Définition des largeurs */
     :root {
-      --nav-width: 250px !important;
-      --nav-width-md: 260px !important;
+      --nav-width: 280px !important;    /* Largeur cible */
+      --nav-width-md: 280px !important;
     }
     
+    /* 2. On élargit physiquement la barre latérale */
     .side-bar {
-      width: 260px !important;
-      flex: 0 0 260px !important;
+      width: 280px !important;
+      flex: 0 0 280px !important;
+      border-right: 1px solid #3d3d3d !important; /* Pour que la ligne de séparation bouge aussi */
+      background-color: #1d1d21 !important;        /* Ta couleur de fond sombre */
     }
 
-    /* 2. Le contenu principal prend tout l'espace restant */
+    /* 3. On décale le bloc principal exactement de la même valeur */
     .main {
-      margin-left: 260px !important;
-      max-width: none !important; /* Retire la limite de largeur du bloc parent */
+      margin-left: 280px !important;
+      max-width: none !important;
     }
 
-    /* 3. On force le texte à s'élargir (C'est ici que ça se joue) */
+    /* 4. On ajuste le texte à l'intérieur */
     .main-content-wrap {
-      max-width: 1400px !important; /* Augmente cette valeur pour plus de largeur */
-      width: 100% !important;        /* Prend 95% de l'espace disponible */
-      padding-left: 130px !important;
+      max-width: 1400px !important;
+      width: 100% !important;
+      padding-left: 60px !important;  /* Espace interne au texte */
       padding-right: 60px !important;
     }
 
-    /* 4. On élargit aussi la zone de lecture réelle */
-    .main-content {
-      max-width: 100% !important;
-      margin: 0 !important;
-    }
-
-    /* 5. Aligner le header (recherche) sur la même largeur */
     .main-header {
       max-width: 1400px !important;
-      width: 95% !important;
+      padding-left: 60px !important;
     }
   }
 
-  @media (min-width: 67rem) {
-     /* ... votre code existant pour la largeur ... */
-  }
-
-  /* Cache la mention "This site uses Just the Docs" dans le footer */
-  footer.site-footer p.text-small.text-grey-dk-000 {
+  /* Cache le message Just the Docs */
+  footer.site-footer p.text-small {
     display: none !important;
   }
 </style>
