@@ -58,7 +58,9 @@ defaults:
     values:
       layout: default
 
-
+sass:
+  style: compressed
+  
 # Just the Docs settings
 just_the_docs:
   # Permet d'injecter des composants personnalisés
