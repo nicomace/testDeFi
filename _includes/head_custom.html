@@ -38,4 +38,37 @@
   footer.site-footer p.text-small {
     display: none !important;
   }
+
+ 
+
+  /* 1. Centrer le titre du site */
+  .site-title {
+    justify-content: center !important;
+    text-align: center !important;
+    padding-left: 0 !important; /* On retire le padding par défaut pour un vrai centrage */
+    margin-bottom: 20px !important;
+  }
+
+  /* 2. Centrer les liens de navigation */
+  .nav-list {
+    text-align: center !important;
+    padding-left: 0 !important;
+  }
+
+  /* 3. Ajuster les éléments de la liste pour qu'ils soient centrés */
+  .nav-list-item {
+    text-align: center !important;
+  }
+
+  /* 4. Retirer les puces ou décalages éventuels sur les liens */
+  .nav-list-link {
+    display: inline-block !important; /* Permet au text-align de fonctionner */
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* 5. Si tu as des sous-menus (comme "DeFi Risk..."), on les centre aussi */
+  .nav-list-expander {
+    right: 10px !important; /* Repositionne la petite flèche sur le côté */
+  }
 </style>
