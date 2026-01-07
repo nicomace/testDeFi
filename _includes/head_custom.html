@@ -21,31 +21,32 @@
         z-index: 1000;
     }
 
-    /* 3. ALIGNEMENT UNIQUE (On supprime le double espace) */
+    /* 3. ALIGNEMENT (Suppression du double espace) */
     .site-title {
         margin-top: 80px !important;
-        padding-left: 20% !important; /* Ton décalage voulu */
+        padding-left: 20% !important; /* Ton décalage de référence */
         margin-bottom: 40px !important;
         display: block !important;
     }
 
     .nav-list {
-        padding-left: 0 !important;   /* ON RESET LE PADDING PAR DÉFAUT ICI */
+        padding-left: 0 !important;   /* ON RESET L'ESPACE PAR DÉFAUT DU THÈME */
         margin: 0 !important;
         list-style: none !important;
     }
 
     .nav-list-item {
-        padding-left: 20% !important; /* ON APPLIQUE LE DÉCALAGE ICI */
+        padding-left: 20% !important; /* ON ALIGNE SUR LE TITRE ICI */
         text-align: left !important;
         margin-bottom: 15px !important;
     }
 
     .nav-list-link {
-        padding-left: 0 !important;   /* On évite que le lien rajoute encore de l'espace */
+        padding-left: 0 !important;   /* On s'assure que le lien ne rajoute rien */
+        display: inline-block !important;
     }
 
-    /* 4. CONTENU PRINCIPAL (75%) */
+    /* 4. CONTENU PRINCIPAL ET BARRE DU HAUT */
     .main {
         margin-left: 25% !important;
         width: 75% !important;
