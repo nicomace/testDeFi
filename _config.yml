@@ -67,3 +67,8 @@ just_the_docs:
   collections:
     setup:
       nav_exclude: true
+      
+  typekit_id: 
+  search_enabled: false
+    # On s'assure que le footer n'affiche que votre texte
+  last_edit_enabled: false
