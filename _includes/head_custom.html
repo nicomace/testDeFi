@@ -1,52 +1,58 @@
 <style>
   @media (min-width: 67rem) {
-    /* 1. ON CASSE LE CADRE : On force le conteneur global à prendre 100% de l'écran */
-    /* Cela supprime les colonnes vides à gauche et à droite */
-    .container, .main-wrapper, .page-wrapper, .site-header {
+    /* 1. ON ELIMINE LE VIDE A GAUCHE : Le site prend toute la largeur */
+    .container, .main-wrapper, .page-wrapper {
         max-width: none !important;
         width: 100% !important;
         margin: 0 !important;
     }
 
-    /* 2. LA SIDEBAR : On la plaque tout à gauche de la fenêtre */
+    /* 2. LA SIDEBAR : Bien plaquée à gauche */
     .side-bar {
         position: fixed !important;
         left: 0 !important;
-        top: 0 !important;
-        width: 300px !important; /* Tu peux ajuster cette largeur ici */
+        width: 320px !important; /* On l'élargit un peu pour le confort */
         height: 100vh !important;
-        border-right: 1px solid #3d3d3d !important;
         background-color: #1d1d21 !important;
-        z-index: 1000;
+        border-right: 1px solid #3d3d3d !important;
     }
 
-    /* 3. LE CONTENU : On le décale pour qu'il commence après la barre */
-    .main {
-        margin-left: 300px !important; /* Doit être identique à la largeur side-bar */
-        width: calc(100% - 300px) !important;
-        max-width: none !important;
+    /* 3. ALIGNEMENT DU TITRE */
+    .site-title {
+        display: flex !important;
+        padding-left: 60px !important; /* Le retrait que tu as aimé */
+        margin-top: 50px !important;
+        margin-bottom: 30px !important;
     }
 
-    /* 4. ALIGNEMENT INTERNE : On décale le texte DANS la barre */
-    .site-title, .nav-list {
-        padding-left: 50px !important; 
+    /* 4. ALIGNEMENT DU SOMMAIRE (C'est ici que ça se joue) */
+    .nav-list {
+        padding-left: 0 !important; /* On reset le décalage global */
+        margin: 0 !important;
+    }
+
+    .nav-list-item {
+        padding-left: 60px !important; /* ON ALIGNE ICI (même valeur que le titre) */
         text-align: left !important;
     }
-    
-    .site-title {
-        margin-top: 50px !important;
-        margin-bottom: 40px !important;
-        display: flex !important;
+
+    .nav-list-link {
+        display: inline-block !important;
+        padding-left: 0 !important; /* On enlève le padding interne du lien */
+        margin-left: 0 !important;
     }
 
-    /* 5. LARGEUR DU TEXTE : Ton contenu principal */
+    /* 5. LE CONTENU PRINCIPAL */
+    .main {
+        margin-left: 320px !important;
+        width: calc(100% - 320px) !important;
+    }
+
     .main-content-wrap {
-        max-width: 1200px !important;
-        margin: 0 !important;
-        padding: 40px 80px !important;
+        padding-left: 80px !important; /* Espace entre la barre et ton texte */
     }
   }
 
-  /* Supprime la mention Just the Docs */
+  /* Cache les crédits */
   footer.site-footer p.text-small { display: none !important; }
 </style>
