@@ -41,35 +41,37 @@
 
  
 
-  /* 1. Positionnement du TITRE (Portfolio NM) */
-  .site-title {
-    display: flex !important;
-    justify-content: flex-start !important; /* Aligné à gauche */
-    padding-left: 40px !important;         /* Décalage vers la droite */
-    margin-top: 40px !important;           /* Pour le redescendre s'il est trop haut */
-    margin-bottom: 40px !important;        /* Espace avec le menu */
-    height: auto !important;
+
+  @media (min-width: 67rem) {
+    /* 1. On force la sidebar à coller au bord gauche de la fenêtre */
+    .side-bar {
+      left: 0 !important;
+      width: 280px !important; /* Ajustez cette valeur selon la largeur voulue */
+      min-width: 280px !important;
+      position: fixed !important; /* Garantit que le bloc reste ancré à gauche */
+      height: 100% !important;
+    }
+
+    /* 2. On s'assure que le contenu principal commence exactement après la barre */
+    .main {
+      margin-left: 280px !important;
+      width: calc(100% - 280px) !important;
+    }
+
+    /* 3. Vos réglages d'alignement interne pour le titre et le menu */
+    .site-title, .nav-list {
+      padding-left: 50px !important; /* Espace interne pour que le texte ne colle pas au bord de l'écran */
+      text-align: left !important;
+    }
+
+    .site-title {
+      margin-top: 40px !important;
+      margin-bottom: 30px !important;
+    }
   }
 
-  /* 2. Positionnement du MENU (Home, About...) */
-  .nav-list {
-    text-align: left !important;
-    padding-left: 40px !important;         /* Doit être identique au titre pour l'alignement */
-    list-style: none !important;
-  }
-
-  .nav-list-item {
-    text-align: left !important;
-    margin-bottom: 10px !important;        /* Espace entre les lignes du menu */
-  }
-
-  .nav-list-link {
-    display: block !important;
-    padding-left: 0 !important;            /* On reset les paddings internes */
-  }
-
-  /* 3. Ajustement de la flèche du menu déroulant */
-  .nav-list-expander {
-    right: 20px !important;                /* La flèche reste sur le bord droit */
+  /* Cache le message Just the Docs */
+  footer.site-footer p.text-small {
+    display: none !important;
   }
 </style>
