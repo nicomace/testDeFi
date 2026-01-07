@@ -1,6 +1,6 @@
 <style>
   @media (min-width: 67rem) {
-    /* 1. PLEIN ÉCRAN */
+    /* 1. PLEIN ÉCRAN ET SIDEBAR */
     .container, .main-wrapper, .page-wrapper {
         max-width: none !important;
         width: 100% !important;
@@ -8,7 +8,6 @@
         display: flex !important;
     }
 
-    /* 2. SIDEBAR (25%) */
     .side-bar {
         width: 25% !important;
         min-width: 280px !important;
@@ -21,52 +20,50 @@
         z-index: 1000;
     }
 
-    /* 3. ALIGNEMENT (Suppression du double espace) */
+    /* 2. ALIGNEMENT DU TITRE */
     .site-title {
         margin-top: 80px !important;
-        padding-left: 20% !important; /* Ton décalage de référence */
+        padding-left: 20% !important; 
         margin-bottom: 40px !important;
         display: block !important;
     }
 
-    .nav-list {
-        padding-left: 0 !important;   /* ON RESET L'ESPACE PAR DÉFAUT DU THÈME */
-        margin: 0 !important;
-        list-style: none !important;
-    }
-
-    .nav-list-item {
-        padding-left: 20% !important; /* ON ALIGNE SUR LE TITRE ICI */
+    /* 3. NETTOYAGE RADICAL DU SOMMAIRE */
+    /* On force TOUT le contenu du sommaire à n'avoir aucune marge à gauche */
+    .nav-list, .nav-list-item, .nav-list-link {
+        padding-left: 0 !important;
+        margin-left: 0 !important;
         text-align: left !important;
-        margin-bottom: 15px !important;
     }
 
+    /* On applique le décalage de 20% UNIQUEMENT sur le conteneur de la liste */
+    .nav-list {
+        padding-left: 20% !important; /* Doit être identique au titre */
+    }
+
+    /* On s'assure que les liens prennent toute la largeur sans décalage sup */
     .nav-list-link {
-        padding-left: 0 !important;   /* On s'assure que le lien ne rajoute rien */
-        display: inline-block !important;
+        display: block !important;
+        width: 100% !important;
     }
 
-    /* 4. CONTENU PRINCIPAL ET BARRE DU HAUT */
+    /* 4. CONTENU PRINCIPAL */
     .main {
         margin-left: 25% !important;
         width: 75% !important;
-        max-width: none !important;
     }
 
-    .main-header {
-        display: flex !important;
-        width: 100% !important;
-        padding-left: 60px !important; 
-        padding-right: 5% !important;
-    }
-
-    .main-content-wrap {
+    .main-header, .main-content-wrap {
         padding-left: 60px !important;
         padding-right: 5% !important;
         max-width: none !important;
     }
   }
 
-  /* Suppression de la mention Just the Docs */
-  footer.site-footer p.text-small { display: none !important; }
+  /* Cache le message Just the Docs */
+  footer.site-footer p.text-small, 
+  .site-footer .text-small { 
+      display: none !important; 
+      visibility: hidden !important;
+  }
 </style>
