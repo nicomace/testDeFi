@@ -1,6 +1,6 @@
 <style>
   @media (min-width: 67rem) {
-    /* 1. STRUCTURE FIXE */
+    /* 1. STRUCTURE GÉNÉRALE */
     .container, .main-wrapper, .page-wrapper {
         max-width: none !important;
         width: 100% !important;
@@ -29,11 +29,6 @@
 
     .nav-list {
         padding-left: 40px !important;
-        margin: 0 !important;
-    }
-
-    .nav-list-item {
-        margin-bottom: 10px !important;
     }
 
     .nav-list-link {
@@ -44,31 +39,33 @@
 
     .nav-list-expander { display: none !important; }
 
-    /* 3. ÉLARGISSEMENT DU CONTENU VERS LA DROITE */
+    /* 3. ÉLARGISSEMENT TOTAL DU TEXTE */
     .main {
         margin-left: 300px !important;
         width: calc(100% - 300px) !important;
+        max-width: none !important; /* Force la zone principale à ne pas être limitée */
     }
 
     .main-content-wrap {
         padding-left: 60px !important;
-        /* RÉGLAGE : On réduit la marge droite de 5% à 2% pour élargir le texte */
+        /* RÉGLAGE : Marge ultra-fine à droite */
         padding-right: 0.5% !important; 
-        max-width: none !important;
+        
+        /* LA CLÉ : On enlève la limite de largeur par défaut du thème (souvent 800px) */
+        max-width: none !important; 
+        width: 100% !important;
         
         font-size: 1.25rem !important;
         line-height: 1.6 !important;
     }
 
-    /* On aligne aussi la barre du haut sur la nouvelle largeur */
+    /* On aligne aussi la barre du haut */
     .main-header {
         display: flex !important;
+        max-width: none !important;
         padding-left: 60px !important;
         padding-right: 0.5% !important;
     }
-
-    .main-content-wrap h1 { font-size: 2.5rem !important; }
-    .main-content-wrap h2 { font-size: 2rem !important; }
   }
 
   footer.site-footer p.text-small { display: none !important; }
