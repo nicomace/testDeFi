@@ -37,7 +37,9 @@ This toolkit is designed to answer, at a glance:
 
 <br>
 ![Framework flow]({{ site.baseurl }}/assets/images/framework-flow.png)
-{: .mx-auto style="max-width: 400px;" }
+{: .mx-auto style="max-width: 300px;" }
+*Framework flow*
+{: .text-center .text-small }
 
 ---
 
